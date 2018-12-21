@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ViewController+Swizzling.h
 //  RuntimeDemo
 //
 //  Created by Mr_Han on 2018/12/21.
@@ -8,10 +8,12 @@
 //  GitHub <https://github.com/HanQiGod>
 //
 
-#import <UIKit/UIKit.h>
+#import "ViewController.h"
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface ViewController (Swizzling)
 
 @end
 
+NS_ASSUME_NONNULL_END

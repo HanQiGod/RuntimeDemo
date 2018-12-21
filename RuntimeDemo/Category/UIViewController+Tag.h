@@ -1,5 +1,5 @@
 //
-//  main.m
+//  UIViewController+Tag.h
 //  RuntimeDemo
 //
 //  Created by Mr_Han on 2018/12/21.
@@ -9,10 +9,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AppDelegate.h"
 
-int main(int argc, char * argv[]) {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-    }
-}
+NS_ASSUME_NONNULL_BEGIN
+
+@interface UIViewController (Tag)
+
+@property (nonatomic, strong) NSString *tag;
+
+@end
+
+NS_ASSUME_NONNULL_END
